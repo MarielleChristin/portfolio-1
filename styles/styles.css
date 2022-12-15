@@ -1,0 +1,190 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+.centered {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Corben', cursive;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Skip content */
+
+a.skip-main {
+  left:-999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color: black;
+  left: auto;
+  top: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
+}
+
+/* NAV */
+
+header {
+  font-size: 1.2em;
+  height: 80px;
+  margin-top: 20px;
+}
+
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #3E5C3E;
+}
+
+nav .right a:hover {
+  text-decoration: underline;
+}
+
+nav .active {
+  font-weight: 700;
+}
+
+.right {
+  float: right;
+  padding-right: 30px;
+}
+
+/* ABOUT ME */
+
+.portrait {
+  width: 40%;
+  height: 600px;
+  background-color: chocolate;
+  float: left;
+}
+
+.photo {
+  background-image: url(/Images/IMG_1947.JPG);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 300px;
+  margin: auto;
+}
+
+.about {
+  width: 60%;
+  height: 600px;
+  background-color:seagreen;
+  float: left;
+}
+
+.skills img {
+  height: 25px;
+  width: 25px;
+}
+
+/* WORK */
+
+.portfolio {
+  min-height: 500px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.project {
+  min-height: 480px;
+  max-width: 250px;
+  margin: 30px 15px;
+  border-radius: 0px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+  max-height: 150px;
+  max-width: 250px;
+  border-radius: 0px 35px;
+  margin-bottom: 5px;
+  border: 2px #000;
+}
+
+.link {
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid #000;
+  color: #000;
+  box-shadow: 2px 2px lightgrey;
+}
+
+p {
+  margin: 10px;
+}
+
+/* Footer */
+
+footer {
+  height: 70px;
+  width: 100vw;
+  border-top: 1px solid #000;
+  display: flex;
+}
+
+.toe {
+  height: 70px;
+  width: 33.3%;
+  float: left;
+  padding-top: 40px;
+  text-align: end;
+}
+
+/* Media */
+
+@media (max-width:875px) {
+  .portfolio {
+    display: block;
+  }
+  
+  .project {
+    height: 480px;
+    min-width: 350px;
+    margin: 30px auto;
+  }
+  
+  .image {
+    height: 200px;
+    min-width: 350px;
+    border-radius: 0px 35px;
+    margin-bottom: 5px;
+    border: 2px #000;
+  }
+}
