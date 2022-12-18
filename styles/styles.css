@@ -78,34 +78,60 @@ nav .active {
   padding-right: 30px;
 }
 
+/* LANDING */
+
+.hello {
+  height: 600px;
+  width: 100vw;
+  background-color: #3E5C3E;
+  display: flex;
+}
+
+.intro {
+  margin: 0 0 40px 40px;
+  align-self: flex-end;
+}
+
+span {
+  background-color: #fff;
+  line-height: 2;
+  padding: 0 10px;
+}
+
 /* ABOUT ME */
 
 .portrait {
   width: 40%;
-  height: 600px;
-  background-color: chocolate;
+  height: 500px;
   float: left;
 }
 
-.photo {
+.face {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
   background-image: url(/Images/IMG_1947.JPG);
   background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 300px;
-  margin: auto;
+  background-position: 0 25%;
+  background-repeat: no-repeat;
+  margin: 40px auto;
 }
 
 .about {
   width: 60%;
-  height: 600px;
-  background-color:seagreen;
+  min-height: 500px;
   float: left;
+  margin-top: 40px;
+}
+
+.skills, .personal {
+  max-width: 600px;
 }
 
 .skills img {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
 }
 
 /* WORK */
@@ -186,5 +212,27 @@ footer {
     border-radius: 0px 35px;
     margin-bottom: 5px;
     border: 2px #000;
+  }
+
+  /* ABOUT ME*/ 
+
+  .portrait {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .face {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .about {
+    width: 100%;
+    min-height: 400px;
+    margin: auto 40px ;
+  }
+
+  .personal {
+    width: 400px;
   }
 }
